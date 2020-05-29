@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Diwali"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diwali"
+        android:textSize="50dp"
+        android:textColor="#123abc"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp">
+
+    </TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:src="@mipmap/light"
+                android:id="@+id/diwalilight1">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:id="@+id/diwalilight2"
+                android:src="@mipmap/light">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:id="@+id/diwalilight3"
+                android:src="@mipmap/light">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:id="@+id/diwalilight4"
+                android:src="@mipmap/light">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:id="@+id/diwalilight5"
+                android:src="@mipmap/light">
+
+            </ImageView>
+        </TableRow>
+
+        <ImageView
+            android:src="@mipmap/chkri"
+            android:layout_weight="1"
+            android:layout_height="300dp"
+            android:id="@+id/chakri">
+
+        </ImageView>
+
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="BOMB"
+                android:textColor="#ffff"
+                android:textSize="30sp"
+                android:id="@+id/diwalibomb"
+                android:onClick="BombMusic">
+
+            </Button>
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>

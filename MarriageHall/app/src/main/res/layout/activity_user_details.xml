@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    android:id="@+id/userDetails"
+    android:orientation="vertical"
+    tools:context=".UserDetails">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginlayout">
+
+    </FrameLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textColor="#123"
+            android:layout_gravity="center"
+            android:textSize="25dp"></TextView>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:stretchColumns="*"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:errorEnabled="true"
+                    app:errorTextColor="#FF0A00"
+
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="ID"
+                        android:textSize="15sp"
+                        android:id="@+id/idRegister">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:errorEnabled="true"
+                    app:errorTextColor="#FF0A00"
+
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pass"
+                        android:textSize="15sp"
+                        android:id="@+id/passRegister">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:errorEnabled="true"
+                    app:errorTextColor="#FF0A00"
+
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:textSize="15sp"
+                        android:id="@+id/nameRegister">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:errorEnabled="true"
+                    app:errorTextColor="#FF0A00"
+
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:textSize="15sp"
+                        android:id="@+id/emailRegister">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:errorEnabled="true"
+                    app:errorTextColor="#FF0A00"
+
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone"
+                        android:textSize="15sp"
+                        android:id="@+id/phoneRegister">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Submit"
+
+            android:textSize="15sp"
+            android:id="@+id/submitRegister">
+
+        </Button>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale android:fromXScale="35dp"
+    android:toXScale="40dp"
+    android:fromYScale="35dp"
+    android:toYScale="40dp"
+    android:repeatCount="infinite"
+    android:duration="100"
+    android:repeatMode="reverse"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+</scale>

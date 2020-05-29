@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FriendsApp</string>
+
+    <array name="friendsarr">
+        <item>Scott</item>
+        <item>Jack</item>
+        <item>King</item>
+
+    </array>
+</resources>

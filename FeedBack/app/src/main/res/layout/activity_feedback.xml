@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#4CAF50"
+    android:layout_height="match_parent"
+    tools:context=".Feedback">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_marginTop="20dp">
+            <TextView android:text="FeedBack"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textSize="40sp"></TextView>
+            <Button android:text="Add FeedBack"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:background="#2196F3">
+
+            </Button>
+        </TableRow>
+
+    <TableRow>
+        <ListView
+            android:layout_span="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/feedbackname"
+            ></ListView>
+    </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_span="2"
+                android:text="Hello world"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_gravity="center">
+
+            </TextView>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

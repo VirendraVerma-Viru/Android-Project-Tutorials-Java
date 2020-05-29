@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:orientation="vertical"
+    tools:context=".Registration">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        android:layout_height="match_parent">
+        <TableRow
+            android:background="#123"
+            android:layout_marginTop="100dp">
+            <TextView
+
+                android:text="Registration"
+                android:textSize="30sp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_span="2">
+
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="50dp">
+            <TextView android:text="ID"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+
+                ></TextView>
+
+            <EditText android:inputType="text"
+                android:textColor="#fff"
+                android:id="@+id/id"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Password"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                ></TextView>
+
+            <EditText android:inputType="textPassword"
+                android:textColor="#fff"
+                android:id="@+id/pass"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <Spinner
+                android:layout_marginTop="20dp"
+                android:layout_column="1"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:layout_gravity="left"
+                android:entries="@array/AccountType"
+                android:id="@+id/type"></Spinner>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:background="#4596E2"
+                android:layout_span="2"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="SubmitButton">
+
+            </Button>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

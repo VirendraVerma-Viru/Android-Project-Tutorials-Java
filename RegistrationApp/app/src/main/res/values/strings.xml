@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RegistrationApp</string>
+    <string name="btnsubmit">Submit</string>
+    <string name="textname">Name</string>
+
+    <array name="citynames">
+        <item>Select City</item>
+        <item>Lucknow</item>
+        <item>Varanasi</item>
+        <item>Agra</item>
+
+    </array>
+</resources>
+
+

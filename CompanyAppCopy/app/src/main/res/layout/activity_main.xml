@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow android:layout_marginTop="10dp"
+            android:background="#123">
+            <TextView
+                android:layout_span="2"
+                android:text="Employee"
+                android:textColor="#fff"
+
+                android:layout_gravity="center"
+                android:textSize="40sp"
+                >
+
+            </TextView>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="ID"
+                android:textSize="25sp"
+                android:layout_gravity="center"></TextView>
+
+            <EditText
+                android:id="@+id/empid"
+                android:textSize="25sp"
+                ></EditText>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Name"
+                android:textSize="25sp"
+                android:layout_gravity="center"></TextView>
+
+            <EditText
+                android:id="@+id/empname"
+                android:textSize="25sp"
+                ></EditText>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Email"
+                android:textSize="25sp"
+                android:layout_gravity="center"></TextView>
+
+            <EditText
+                android:id="@+id/empemail"
+                android:textSize="25sp"
+                ></EditText>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Phone"
+                android:textSize="25sp"
+                android:layout_gravity="center"></TextView>
+
+            <EditText
+                android:id="@+id/empphone"
+                android:textSize="25sp"
+                ></EditText>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="50dp">
+            <Button
+                android:layout_span="2"
+                android:id="@+id/addEmp"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:text="ADD"
+                android:textColor="#fff"
+                android:background="#4CAF50"
+                >
+
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table">
+
+    </TableLayout>
+
+</LinearLayout>

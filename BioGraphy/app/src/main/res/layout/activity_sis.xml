@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sis">
+
+    <TableRow>
+        <ImageView
+            android:src="@drawable/sister"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            >
+
+        </ImageView>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="She is younger to me. \nShe reads in class-VIII.\nShe is the youngest member in \nour family. She plays with her\ndolls and games happily. \nWhen I draw sketches and \npictures with my colour pencils,\nshe sits by my side, and watches\nmy coloring work. Sometimes,\nshe tries to imitate my drawings."
+            android:fontFamily="monospace"
+            android:textSize="15dp"
+            android:padding="5dp">
+
+        </TextView>
+    </TableRow>
+
+</TableLayout>

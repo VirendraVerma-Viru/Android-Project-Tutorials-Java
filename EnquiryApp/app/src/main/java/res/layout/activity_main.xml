@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#68B6F3"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:padding="10dp"
+        >
+
+
+        <TableRow>
+            <TextView android:text="Name"
+                android:textSize="15sp"
+                android:textColor="#fff"/>
+
+            <EditText android:id="@+id/name"
+                android:hint="Name"
+                android:textSize="15sp"
+                android:textColor="#fff"
+
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Email"
+                android:textSize="15sp"
+                android:textColor="#fff"/>
+
+            <EditText android:id="@+id/email"
+                android:hint="Email"
+                android:textSize="15sp"
+                android:textColor="#fff"
+
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Phone"
+                android:textSize="15sp"
+                android:textColor="#fff"/>
+
+            <EditText android:id="@+id/phone"
+                android:hint="Phone"
+                android:textSize="15sp"
+                android:textColor="#fff"
+
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Course Enquired"
+                android:layout_span="2"
+                android:textSize="15sp"
+                android:fontFamily="monospace"
+                android:textColor="#fff"
+                >
+
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:text="Java"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:buttonTint="#fff"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/java"
+                    >
+
+                </CheckBox>
+                <CheckBox
+                    android:text="Android"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:buttonTint="#fff"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/android"
+                    >
+
+                </CheckBox>
+                <CheckBox
+                    android:text="C#"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:buttonTint="#fff"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/csharp"
+                    >
+
+                </CheckBox>
+                <CheckBox
+                    android:text="Python"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:buttonTint="#fff"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/python"
+                    >
+
+                </CheckBox>
+            </LinearLayout>
+         </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Date"
+                android:layout_span="1"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:layout_gravity="center">
+            </TextView>
+
+            <DatePicker
+                android:id="@+id/date"
+                android:layout_height="250dp"
+                android:layout_width="250dp"
+                ></DatePicker>
+
+
+        </TableRow>
+
+
+        <TableRow>
+            <Button
+                android:layout_marginTop="20dp"
+                android:text="SUBMIT"
+                android:textSize="24sp"
+                android:layout_span="2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/submit">
+
+            </Button>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

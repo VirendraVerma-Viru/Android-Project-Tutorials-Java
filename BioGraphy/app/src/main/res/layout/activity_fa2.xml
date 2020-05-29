@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fa">
+
+    <TableRow>
+        <ImageView
+            android:src="@drawable/father"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            >
+
+        </ImageView>
+    </TableRow>
+
+    <!-- android:text="My father respects his own\nparents, my mother and each \nmember of my family.\nHe maintains cordial relationsn\nwith our relatives, friends and \nneighbours. He drops me and \nmy sister to school and my \nmother to work every day. \nHe helps me and my younger \nsister in our studies every day"-->
+
+    <TableRow>
+        <TextView
+            android:fontFamily="monospace"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:id="@+id/myFather">
+
+        </TextView>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#123"
+    android:layout_height="match_parent"
+    tools:context=".Reception">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <TableRow android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reception Area"
+                android:textColor="#fff"
+                android:textSize="30sp"
+
+                android:layout_gravity="left">
+
+            </TextView>
+
+            <Button
+                android:layout_column="1"
+                android:text="Add"
+                android:textSize="20dp"
+                android:onClick="AddEmp"
+                android:textColor="#fff"
+                android:background="#43B447"
+                android:id="@+id/addemployee">
+
+            </Button>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp">
+            <Button
+                android:layout_column="1"
+                android:text="View"
+                android:textSize="20dp"
+                android:onClick="AddEmp"
+                android:textColor="#fff"
+                android:background="#43B447"
+                android:id="@+id/viewemployee">
+
+            </Button>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp">
+            <Button
+                android:layout_column="1"
+                android:text="Search"
+                android:textSize="20dp"
+                android:onClick="AddEmp"
+                android:textColor="#fff"
+                android:background="#43B447"
+                android:id="@+id/searhemployee">
+
+            </Button>
+        </TableRow>
+        <TableRow android:layout_marginTop="5dp">
+            <Button
+                android:layout_column="1"
+                android:text="Delete"
+                android:textSize="20dp"
+                android:onClick="AddEmp"
+                android:textColor="#fff"
+                android:background="#43B447"
+                android:id="@+id/deleteemployee">
+
+            </Button>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+</LinearLayout>

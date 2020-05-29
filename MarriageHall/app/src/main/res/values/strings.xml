@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MarriageHall</string>
+
+    <array name="CatersService">
+        <item>Plate System</item>
+        <item>Normal System</item>
+    </array>
+</resources>

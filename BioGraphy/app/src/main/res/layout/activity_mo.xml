@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mo">
+    <TableRow>
+        <ImageView
+            android:src="@drawable/mother"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            >
+
+        </ImageView>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="My mother is my best friend. \nShe always listens me and helps \nme to solve my problems. \nMy mother is always concerned \nfor everything about me \nincluding my health,food and my \nstudies.My mother is my great\nmotivation. She always helps me  \nin allmy goals and tasks of\n my life."
+            android:fontFamily="monospace"
+            android:textSize="15dp"
+            android:padding="5dp">
+
+        </TextView>
+    </TableRow>
+
+</TableLayout>

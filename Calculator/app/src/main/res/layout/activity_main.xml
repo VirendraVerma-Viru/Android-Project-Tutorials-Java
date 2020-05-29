@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="*"
+    android:background="#03A9F4">
+
+    <TableRow>
+        <TextView android:text="Number one"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            >
+        </TextView>
+
+
+            <EditText android:hint="Enter number"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:inputType="number"
+                android:id="@+id/number1"
+                android:textAlignment="center"
+                >
+            </EditText>
+
+
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Number Two"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            >
+        </TextView>
+
+
+            <EditText android:hint="Enter number"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:inputType="number"
+                android:id="@+id/number2"
+                android:textAlignment="center"
+                >
+            </EditText>
+      </TableRow>
+
+    <TableRow>
+        <TextView android:text="RESULT"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            >
+        </TextView>
+
+
+        <EditText android:hint="Result Here"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:inputType="number"
+            android:id="@+id/result"
+            android:textAlignment="center"
+            >
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:text="ADD"
+            android:textSize="30dp"
+            android:id="@+id/add"
+            android:onClick="calculation"
+            />
+        <!--android:onClick="add"-->
+        <Button
+            android:text="SUB"
+            android:textSize="30dp"
+            android:id="@+id/sub"
+            android:onClick="calculation"
+            />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="50dp">
+        <Button android:text="Formula"
+            android:textSize="30dp"
+            android:id="@+id/formula"
+            android:layout_span="2"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:onClick="navigate"/>
+    </TableRow>
+
+</TableLayout>

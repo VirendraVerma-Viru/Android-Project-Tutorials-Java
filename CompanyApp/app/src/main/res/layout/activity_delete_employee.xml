@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#123"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DeleteEmployee">
+
+
+    <TableLayout
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        android:layout_height="match_parent">
+
+    <TableRow>
+
+        <EditText
+            android:hint="ID"
+            android:id="@+id/deleteid"
+            android:textColorHint="#fff"
+            android:inputType="number"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:textColor="#fff"
+            android:textSize="25sp">
+
+        </EditText>
+
+        <Button
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:text="GO"
+            android:layout_width="0dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:background="#43B447"
+            android:id="@+id/godeleteemployee">
+
+        </Button>
+    </TableRow>
+    </TableLayout>
+
+</LinearLayout>

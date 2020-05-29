@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEEEE"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:background="#000">
+            <TextView
+                android:layout_span="2"
+                android:text="Form Page"
+                android:layout_gravity="center"
+                android:textSize="40sp"
+                android:textColor="#fff"
+                ></TextView>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="ID"
+                android:textSize="30sp"
+                android:layout_gravity="center"></TextView>
+
+            <EditText
+                android:id="@+id/idt"
+                android:textSize="30sp"
+                android:inputType="text"
+                >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Password"
+                android:textSize="30sp"
+                android:layout_gravity="center"></TextView>
+
+            <EditText
+                android:id="@+id/pass"
+                android:textSize="30sp"
+                android:inputType="textPassword"
+                >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:text="Login"
+                android:textSize="26dp"
+                android:id="@+id/btnlogin"
+                android:textColor="#fff"
+                android:background="#2297F0"></Button>
+            <Button
+                android:text="Registration"
+                android:textSize="26dp"
+                android:id="@+id/btnreg"
+                android:textColor="#fff"
+                android:background="#8BC34A"></Button>
+
+        </TableRow>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:text="Read Feedback"
+            android:onClick="readfeedback"
+            />
+    </TableLayout>
+
+
+</LinearLayout>

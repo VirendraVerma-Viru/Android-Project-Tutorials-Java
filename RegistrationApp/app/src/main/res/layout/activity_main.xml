@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#92A7EC"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_gravity="center"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:padding="10dp">
+
+        <TableRow>
+            <TextView android:text="@string/textname"
+                android:textSize="25sp"
+                android:textColor="#fff"/>
+
+            <EditText android:id="@+id/name"
+                android:hint="Name"
+                android:textSize="25sp"
+                android:textColor="#fff"
+
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Phone"
+                android:textSize="25sp"
+                android:textColor="#fff"/>
+
+            <EditText android:id="@+id/phone"
+                android:hint="Phone"
+                android:textSize="25sp"
+                android:textColor="#fff"
+                android:inputType="number"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioGroup android:orientation="horizontal"
+                android:layout_span="2"
+                android:id="@+id/gender"
+                >
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:buttonTint="#FF0000"
+                    />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:buttonTint="#FF0000"/>
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow>
+            <CheckBox android:id="@+id/java"
+                android:textSize="25sp"
+                android:text="Java"
+                android:textColor="#fff"
+                android:buttonTint="#FF0000"
+                />
+
+            <CheckBox android:id="@+id/android"
+                android:textSize="25sp"
+                android:text="Android"
+                android:textColor="#fff"
+                android:buttonTint="#FF0000"/>
+
+        </TableRow>
+
+        <TableRow>
+            <Spinner
+                android:id="@+id/city"
+                android:entries="@array/citynames"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                >
+
+            </Spinner>
+        </TableRow>
+
+
+        <TableRow>
+            <Button android:text="@string/btnsubmit"
+                android:layout_marginTop="20dp"
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:id="@+id/submit"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textSize="25sp"
+                />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

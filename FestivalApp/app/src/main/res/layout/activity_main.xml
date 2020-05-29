@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TableRow android:layout_marginTop="40dp">
+            <ImageView android:src="@mipmap/holi"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:id="@+id/holi"
+                android:onClick="Navigate"
+                tools:ignore="OnClick"></ImageView>
+            <ImageView android:src="@mipmap/eid"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:id="@+id/eid"
+                android:onClick="Navigate"
+                ></ImageView>
+
+        </TableRow>
+        <TableRow>
+            <ImageView android:src="@mipmap/diwali"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:id="@+id/diwaliPic"
+                android:onClick="Navigate"
+                ></ImageView>
+            <ImageView android:src="@mipmap/christmas"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:id="@+id/christmas"
+                android:onClick="Navigate"
+                ></ImageView>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

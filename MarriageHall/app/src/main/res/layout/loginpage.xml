@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123"
+    android:padding="5dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:textSize="25dp"></TextView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:errorEnabled="true"
+                app:errorTextColor="#FF0A00"
+
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ID"
+                    android:textColorHint="#fff"
+                    android:textSize="15sp"
+                    android:outlineAmbientShadowColor="#fff"
+                    android:textColor="#fff"
+                    android:id="@+id/loginid">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                app:errorEnabled="true"
+                app:errorTextColor="#FF0A00"
+
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:textColorHint="#fff"
+                    android:textSize="15sp"
+                    android:outlineSpotShadowColor="#fff"
+                    android:textColor="#fff"
+                    android:id="@+id/loginpass">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </TableRow>
+
+
+    </TableLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="#fff"
+        android:background="#1681EE"
+        android:layout_gravity="center"
+
+        android:textSize="15dp"
+        android:id="@+id/loginButton"
+        >
+
+    </Button>
+</LinearLayout>
