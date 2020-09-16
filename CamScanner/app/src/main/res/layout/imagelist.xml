@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imagelistid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ImageBG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/index"
+        android:layout_width="48dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_launcher_background" />
+</RelativeLayout>
