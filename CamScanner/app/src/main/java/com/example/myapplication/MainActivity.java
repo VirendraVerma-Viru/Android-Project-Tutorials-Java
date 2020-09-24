@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("world");
         arrayList.add("asd");
 
-        ArrayAdapter arrayAdapter=new ArrayAdapter(this,R.layout.imagelist,arrayList);
-        listView.setAdapter(arrayAdapter);
+        ArrayAdapter arrayAdapter=new ArrayAdapter(this,R.layout.activity_main,arrayList);
+        listView.setAdapter();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
